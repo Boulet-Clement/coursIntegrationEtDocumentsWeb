@@ -58,7 +58,7 @@ small, .small{
 
 /*
 ################################################################
-###     Les Balises d'Alignements                            ###
+###     Les alignements                                      ###
 ################################################################
 */
 
@@ -91,4 +91,43 @@ small, .small{
 
 .lowercase{
     text-transform: lowercase;
+}
+
+
+/* 
+################################################################
+###     Les couleurs                                         ###
+################################################################
+*/
+
+.bg-black{
+    background-color: black;
+}
+.bg-white{
+    background-color: white;
+}
+.bg-blue{
+    background-color: blue;
+}
+.bg-red{
+    background-color: red;
+}
+.bg-green{
+    background-color: green;
+}
+
+.txt-black{
+    color: black;
+}
+.txt-white{
+    color: white;
+}
+.txt-blue{
+    color:blue
+}
+.txt-red{
+    color:red
+}
+.txt-green{
+    color: green;
 }
