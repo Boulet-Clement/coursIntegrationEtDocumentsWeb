@@ -1,0 +1,94 @@
+html{
+    font-style: normal;
+    font-family: Arial, Tahoma, sans-serif;
+}
+body{
+    padding: 0.75rem;
+}
+p, .p{
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0.90rem;
+}
+
+/*
+################################################################
+###     Les titres                                           ###
+################################################################
+*/
+
+h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6{
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: black;
+}
+
+h1, .h1{
+    font-size: 2.50rem;
+}
+
+h2, .h2{
+    font-size: 2rem;
+}
+h3, .h3{
+    font-size: 1.75rem;
+}
+h4, .h4{
+    font-size: 1.50rem;
+}
+h5, .h5{
+    font-size: 1.25rem;
+}
+h6, .h6{
+    font-size: 1rem;
+}
+
+/*
+################################################################
+###     Les Balises De Text Inline                           ###
+################################################################
+*/
+
+small, .small{
+    font-size: 0.80em;
+    color: rgb(114, 113, 113);
+}
+
+/*
+################################################################
+###     Les Balises d'Alignements                            ###
+################################################################
+*/
+
+.align-left{
+    text-align: left;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.align-right{
+    text-align: right;
+}
+
+.align-justify{
+    text-align: justify;
+}
+
+
+/*
+################################################################
+###     Les Transformations                                  ###
+################################################################
+*/
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}

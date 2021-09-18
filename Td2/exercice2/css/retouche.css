@@ -1,0 +1,22 @@
+#one{
+    height: auto;
+}
+#two{
+    text-align: right;
+    overflow: scroll;
+}
+#three{
+    overflow: hidden;
+}
+#four>p{
+    display: inline;
+}
+#four{
+    white-space: nowrap;
+    overflow: scroll;
+}
+#five{
+    height: 130px;
+    overflow: scroll;
+    white-space: pre-line;
+}

@@ -1,0 +1,15 @@
+
+
+section {
+  padding : 10px;
+  border: 1px solid grey;
+}
+
+p {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: transparent;
+  width: 20%;
+  padding: .5em;
+  border: 1px solid grey;
+}
