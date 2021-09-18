@@ -9,6 +9,7 @@ p, .p{
     display: block;
     margin-top: 0;
     margin-bottom: 0.90rem;
+    font-weight: 0;
 }
 
 /*
@@ -56,6 +57,61 @@ small, .small{
     color: rgb(114, 113, 113);
 }
 
+mark, .mark{
+    background-color: chartreuse;
+}
+
+blockquote,.blockquote{
+    margin:0;
+}
+blockquote p, .blockquote {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+blockquote p::before, .blockquote::before {
+    content: '\201C';
+}
+
+blockquote p::after, .blockquote::after {
+    content: '\201D';
+}
+
+q,.q{
+    font-style:italic;
+}
+q::before, .q::before{
+    content: "\201C"
+}
+q::after, .q::after{
+    content: "\201D";
+}
+
+del, .del {
+    text-decoration: line-through;
+    background-color: rgb(230, 116, 116);
+    color: rgb(55, 55, 55);
+}
+ins, .ins {
+    text-decoration: none;
+    background-color: rgb(97, 209, 116);
+    color: rgb(55, 55, 55);
+}
+u,.u{
+    text-decoration: underline;
+}
+strong,.strong{
+    font-weight: bold;
+}
+em,.em{
+    font-weight: 500;
+    font-style: italic;
+}
+abbr {
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 100;
+}
 /*
 ################################################################
 ###     Les alignements                                      ###
@@ -94,6 +150,19 @@ small, .small{
 }
 
 
+/*
+################################################################
+###     Les Listes                                           ###
+################################################################
+*/
+ul{
+    margin: 10px;
+}
+li,.li{
+    display: list-item;
+    list-style-type:disc;
+}
+
 /* 
 ################################################################
 ###     Les couleurs                                         ###
@@ -131,3 +200,5 @@ small, .small{
 .txt-green{
     color: green;
 }
+
+
