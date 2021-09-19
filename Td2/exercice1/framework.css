@@ -9,7 +9,6 @@ p, .p{
     display: block;
     margin-top: 0;
     margin-bottom: 0.90rem;
-    font-weight: 0;
 }
 
 /*
@@ -107,11 +106,43 @@ em,.em{
     font-weight: 500;
     font-style: italic;
 }
-abbr {
+abbr,.abbr {
     font-size: 1.1rem;
     font-style: italic;
     font-weight: 100;
 }
+code,.code {
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+    white-space: pre;
+}
+kbd,.kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    font-family: courier, monospace;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: .85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+/*
+Voici la source de ce code: https://developer.mozilla.org/fr/docs/Web/HTML/Element/kbd
+*/
+
+pre,.pre{
+    margin: 0;
+    white-space: pre;
+    font-family: courier, monospace;
+}
+
+
 /*
 ################################################################
 ###     Les alignements                                      ###
@@ -161,6 +192,12 @@ ul{
 li,.li{
     display: list-item;
     list-style-type:disc;
+}
+.li-square{
+    list-style-type: square;
+}
+.li-none{
+    list-style-type: none;
 }
 
 /* 
