@@ -1,0 +1,26 @@
+#section{
+    display:flex;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.img1{
+    order: 2;
+    float: right;
+}
+.img2{
+    order:1;
+    float:left;
+}
+p.img1, p.img2{
+    width: 25rem;
+    box-sizing:border-box;
+    margin-right: 1em;
+    margin:0;
+}
+p.img1>img, p.img2>img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin:0;
+}
