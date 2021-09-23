@@ -1,12 +1,25 @@
 .flex-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     height: 30em;
-    align-items:center;
 }
 p{
-    width: 12%;
+    
     height: 8em;
     /*margin-left: 1%;*/
+}
+.item{
+    order: 3;
+    flex-basis: 12%;
+    flex-grow: 1;
+}
+.un{
+    order: 2;
+}
+.ci{
+    order: 1;
+    flex-grow: 5;
+    background-color: khaki;
 }
