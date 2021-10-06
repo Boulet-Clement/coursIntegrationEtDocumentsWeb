@@ -26,20 +26,33 @@ section {
   background-color: red;
 }
 
-.alert {
+.alert, .alert-avertissement, .alert-info, .alert-danger, .alert-success {
   width: 100%;
-  height: 2rem;
+  height: auto;
   font-size: 1.5rem;
+  display: block;
+  padding: 20px;
+  margin-bottom: 15px;
 }
 
 .alert-success {
   background-color: #1ccc1c;
-  color: green;
+  color: white;
 }
 
 .alert-danger {
   background-color: #b14848;
-  color: red;
+  color: white;
+}
+
+.alert-info {
+  background-color: #2527aa;
+  color: white;
+}
+
+.alert-avertissement {
+  background-color: orange;
+  color: white;
 }
 
 /*# sourceMappingURL=td7.11.css.map */

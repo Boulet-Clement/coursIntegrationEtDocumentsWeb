@@ -4,14 +4,30 @@ $font-size: 1.5rem;
 $padding: 20px;
 $margin-bottom: 15px;
 
-
-.alert{
+@mixin alert-structure{
     width: $width;
     height: $height;
-    font-size: $font-size;
     display:block;
+}
+
+@mixin alert-specifications($color){
+    font-size: $font-size;
     padding: $padding;
     margin-bottom: $margin-bottom;
+    color : $color;
+
+}
+
+@mixin alert($type){
+    @include alert-structure;
+    @if($type == "success"){
+        $color : green;
+    };
+    @include alert-specifications($color);
+}
+
+.alert-success{
+    @include alert("success");
 }
 
 
@@ -20,24 +36,24 @@ $bg-color-success:green !default;
 $bg-color-danger:red !default;
 $bg-color-info: blue !default;
 $bg-color-avertissement: orange !default;
-@import '_TD72variables.scss';
+
 .alert-success{
-    @extend .alert;
+    @include alert;
     background-color: $bg-color-success;
     color: $color;
 }
 .alert-danger{
-    @extend .alert;
+    @include alert;
     background-color: $bg-color-danger;
     color: $color;
 }
 .alert-info{
-    @extend .alert;
+    @include alert;
     background-color: $bg-color-info;
     color: $color;
 }
 .alert-avertissement{
-    @extend .alert;
+    @include alert;
     background-color: $bg-color-avertissement;
     color: $color;
 }

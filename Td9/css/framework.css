@@ -1,0 +1,19 @@
+/* Error: Undefined variable.
+ *    ,
+ * 26 |     @include alert-specifications($color);
+ *    |                                   ^^^^^^
+ *    '
+ *   scss\_alert.scss 26:35   alert()
+ *   scss\_alert.scss 30:5    @import
+ *   scss\framework.scss 1:9  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 26 \2502      @include alert-specifications($color);\d\a    \2502                                    ^^^^^^\a    \2575 \a   scss\\_alert.scss 26:35   alert()\a   scss\\_alert.scss 30:5    @import\a   scss\\framework.scss 1:9  root stylesheet";
+}
