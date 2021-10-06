@@ -1,0 +1,17 @@
+$width: 100%;
+$height:2rem;
+$font-size: 1.5rem;
+.alert{
+    width: $width;
+    height: $height;
+    font-size: $font-size;
+}
+@import '_TD72variables.scss';
+.alert-success{
+    background-color: $bg-color-success;
+    color: $color-success;
+}
+.alert-danger{
+    background-color: $bg-color-danger;
+    color: $color-danger;
+}

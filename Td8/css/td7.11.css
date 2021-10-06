@@ -1,0 +1,45 @@
+.content, section {
+  width: 120px;
+  height: 120px;
+  background-color: lightgrey;
+  font-size: 1rem;
+  padding: 5px;
+}
+.content h1, section h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  background-color: grey;
+}
+.content h1:hover, section h1:hover {
+  font-size: 2rem;
+  background-color: #b3b3b3;
+}
+
+@media screen and (min-width: 70em) {
+  .content, section {
+    background-color: blue;
+  }
+}
+section {
+  padding: 10px;
+  margin: 10px;
+  background-color: red;
+}
+
+.alert {
+  width: 100%;
+  height: 2rem;
+  font-size: 1.5rem;
+}
+
+.alert-success {
+  background-color: #1ccc1c;
+  color: green;
+}
+
+.alert-danger {
+  background-color: #b14848;
+  color: red;
+}
+
+/*# sourceMappingURL=td7.11.css.map */

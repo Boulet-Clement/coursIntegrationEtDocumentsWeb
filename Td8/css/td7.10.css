@@ -1,0 +1,18 @@
+.content {
+  width: 120px;
+  height: 120px;
+  background-color: lightgrey;
+  font-size: 1rem;
+  padding: 5px;
+}
+.content h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  background-color: grey;
+}
+.content h1:hover {
+  font-size: 2rem;
+  background-color: #b3b3b3;
+}
+
+/*# sourceMappingURL=td7.10.css.map */

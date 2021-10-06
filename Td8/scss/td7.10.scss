@@ -1,0 +1,25 @@
+$bg-color : lightgrey;
+$width : 120px;
+$height : 120px;
+$font-size : 1rem;
+$padding : 5px;
+
+$h1_bg-color : grey;
+$h1_font-size : 1.8rem;
+
+.content{
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
+    font-size: $font-size;
+    padding: $padding;
+    h1 {
+        font-size: $h1_font-size;
+        font-weight: 600;
+        background-color: $h1_bg-color;
+    }
+    h1:hover {
+        font-size: $h1_font-size+0.2rem;
+        background-color: lighten($h1_bg-color,20%);
+    }
+}
