@@ -5,6 +5,11 @@
 ##              Alertes              ##
 #######################################
 */
+/*
+#######################################
+##              Boutons              ##
+#######################################
+*/
 .alert-primary {
   width: 100%;
   height: auto;
@@ -14,6 +19,16 @@
   margin-bottom: 15px;
   color: white;
   background-color: blue;
+}
+
+.btn-primary, .btn {
+  color: white;
+  background-color: blue;
+  border-color: #000099;
+}
+
+.btn-primary:hover, .btn:hover {
+  background-color: #000099;
 }
 
 .alert-success {
@@ -27,6 +42,16 @@
   background-color: lime;
 }
 
+.btn-success {
+  color: white;
+  background-color: lime;
+  border-color: #009900;
+}
+
+.btn-success:hover {
+  background-color: #009900;
+}
+
 .alert-danger {
   width: 100%;
   height: auto;
@@ -38,6 +63,16 @@
   background-color: red;
 }
 
+.btn-danger {
+  color: white;
+  background-color: red;
+  border-color: #990000;
+}
+
+.btn-danger:hover {
+  background-color: #990000;
+}
+
 .alert-dark {
   width: 100%;
   height: auto;
@@ -46,6 +81,16 @@
   padding: 20px;
   margin-bottom: 15px;
   color: white;
+  background-color: black;
+}
+
+.btn-dark {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-dark:hover {
   background-color: black;
 }
 
@@ -60,6 +105,40 @@
   background-color: white;
 }
 
+.btn-light {
+  color: black;
+  background-color: white;
+  border-color: #cccccc;
+}
+
+.btn-light:hover {
+  background-color: #cccccc;
+}
+
+.btn-small {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+.btn-medium, .btn {
+  padding: 0.45rem 0.9rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.btn-large {
+  padding: 0.6rem 1.2rem;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
+
+.btn-classic, .btn {
+  border-radius: 0.4rem;
+  border-style: solid;
+  border-width: 2px;
+}
+
 /* Voici un test de rajout de la part d'un développeur ayant lu la documentation : */
 .alert-info {
   width: 100%;
@@ -70,6 +149,12 @@
   margin-bottom: 15px;
   color: red;
   background-color: grey;
+}
+
+.btn-info {
+  color: red;
+  background-color: grey;
+  border-color: #4d4d4d;
 }
 
 /*# sourceMappingURL=framework.css.map */

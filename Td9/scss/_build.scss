@@ -6,9 +6,42 @@
         }
         @include alert($color,$theme-color);
     }
+    .btn-#{$theme}{
+        $color : $btn-color;
+        @if $theme == "light" {
+            $color : $black;
+        }
+        @include btn-color($color,$theme-color)
+    }
+    .btn-#{$theme}:hover{
+        background-color: darken($theme-color,20%)
+    }
+}
+
+.btn-small{
+    @include btn-structure("small");
+}
+.btn-medium{
+    @include btn-structure("medium");
+}
+.btn-large{
+    @include btn-structure("large");
+}
+
+.btn-classic{
+    @include btn-type("classic");
+}
+
+.btn{
+    @extend .btn-primary;
+    @extend .btn-medium;
+    @extend .btn-classic
 }
 
 /* Voici un test de rajout de la part d'un développeur ayant lu la documentation : */
 .alert-info{
     @include alert(red,grey);
+}
+.btn-info{
+    @include btn-color(red,grey);
 }

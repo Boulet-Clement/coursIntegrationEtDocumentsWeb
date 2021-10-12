@@ -28,6 +28,7 @@ $themes-colors: (
 ) !default;
 
 
+
 /*
 #######################################
 ##              Alertes              ##
@@ -44,3 +45,28 @@ $alert-margin-bottom : 15px !default;
 
 $alert-color : white !default;
 $alert-background-color : grey !default;
+
+/*
+#######################################
+##              Boutons              ##
+#######################################
+*/
+$btn-padding : 0.45rem 0.90rem !default;
+$btn-border-radius : 0.4rem !default;
+$btn-line-height : 1.25rem !default;
+$btn-border-width : 2px !default;
+$btn-border-style : solid !default;
+
+$btn-font-size-small: 0.80rem !default;
+$btn-padding-small: 0.30rem 0.60rem !default;
+$btn-line-height-small : 1rem !default;
+
+$btn-font-size-medium: 1rem !default;
+$btn-padding-medium: $btn-padding !default;
+
+$btn-font-size-large: 1.25rem !default;
+$btn-padding-large: 0.60rem 1.20rem !default;
+
+$btn-border-color : rgb(11, 11, 126);
+$btn-background-color : $primary;
+$btn-color : $white;
