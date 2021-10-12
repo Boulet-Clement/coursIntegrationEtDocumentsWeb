@@ -1,59 +1,19 @@
-$width: 100%;
-$height:auto;
-$font-size: 1.5rem;
-$padding: 20px;
-$margin-bottom: 15px;
-
 @mixin alert-structure{
-    width: $width;
-    height: $height;
-    display:block;
+    width: $alert-width;
+    height: $alert-height;
+    display: $alert-display;
 }
 
-@mixin alert-specifications($color){
-    font-size: $font-size;
-    padding: $padding;
-    margin-bottom: $margin-bottom;
+@mixin alert-specifications($color, $background-color){
+    font-size: $alert-font-size;
+    padding: $alert-padding;
+    margin-bottom: $alert-margin-bottom;
     color : $color;
+    background-color: $background-color;
 
 }
 
-@mixin alert($type){
+@mixin alert($color, $background-color){
     @include alert-structure;
-    @if($type == "success"){
-        $color : green;
-    };
-    @include alert-specifications($color);
-}
-
-.alert-success{
-    @include alert("success");
-}
-
-
-$color: white !default;
-$bg-color-success:green !default;
-$bg-color-danger:red !default;
-$bg-color-info: blue !default;
-$bg-color-avertissement: orange !default;
-
-.alert-success{
-    @include alert;
-    background-color: $bg-color-success;
-    color: $color;
-}
-.alert-danger{
-    @include alert;
-    background-color: $bg-color-danger;
-    color: $color;
-}
-.alert-info{
-    @include alert;
-    background-color: $bg-color-info;
-    color: $color;
-}
-.alert-avertissement{
-    @include alert;
-    background-color: $bg-color-avertissement;
-    color: $color;
+    @include alert-specifications($color, $background-color);
 }

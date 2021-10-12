@@ -1,0 +1,5 @@
+@each $theme, $theme-color in $themes-colors{
+    .alert-#{$theme}{
+        @include alert($alert-color,$theme-color);
+    }
+}
