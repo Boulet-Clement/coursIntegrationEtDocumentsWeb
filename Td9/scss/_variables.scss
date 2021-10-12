@@ -1,21 +1,30 @@
 $red: rgb(255,0,0) !default;
 $green: rgb(0,255,0) !default;
 $blue: rgb(0,0,255) !default;
+$black: rgb(0,0,0) !default;
+$white: rgb(255,255,255) !default;
+
 
 $colors: (
     "red" : $red,
     "green" : $green,
-    "blue": $blue
+    "blue": $blue,
+    "black": $black,
+    "white": $white
 ) !default;
 
 $primary: $blue !default;
 $success: $green !default;
 $danger: $red !default;
+$dark : $black !default;
+$light : $white !default;
 
 $themes-colors: (
     "primary" : $primary,
     "success" : $success,
-    "danger" : $danger
+    "danger" : $danger,
+    "dark" : $dark,
+    "light" : $light
 ) !default;
 
 

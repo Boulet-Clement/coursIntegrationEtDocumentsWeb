@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Penser a mettre un reboot ici */
 /*
 #######################################
@@ -35,6 +36,40 @@
   margin-bottom: 15px;
   color: white;
   background-color: red;
+}
+
+.alert-dark {
+  width: 100%;
+  height: auto;
+  display: block;
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 15px;
+  color: white;
+  background-color: black;
+}
+
+.alert-light {
+  width: 100%;
+  height: auto;
+  display: block;
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 15px;
+  color: black;
+  background-color: white;
+}
+
+/* Voici un test de rajout de la part d'un développeur ayant lu la documentation : */
+.alert-info {
+  width: 100%;
+  height: auto;
+  display: block;
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 15px;
+  color: red;
+  background-color: grey;
 }
 
 /*# sourceMappingURL=framework.css.map */

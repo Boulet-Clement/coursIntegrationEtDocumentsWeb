@@ -1,5 +1,14 @@
 @each $theme, $theme-color in $themes-colors{
     .alert-#{$theme}{
-        @include alert($alert-color,$theme-color);
+        $color : $alert-color;
+        @if $theme == "light" {
+            $color: $black;
+        }
+        @include alert($color,$theme-color);
     }
+}
+
+/* Voici un test de rajout de la part d'un développeur ayant lu la documentation : */
+.alert-info{
+    @include alert(red,grey);
 }
