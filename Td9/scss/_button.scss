@@ -17,18 +17,10 @@
 
 }
 
-@mixin btn-color($color, $background-color){
+@mixin btn-color($type, $color, $background-color){
     color : $color;
     background-color: $background-color;
-    @if background-color != none{
-        border-color: darken($background-color,20%);
-    }@else {
-        border-color: $color;
-    }
-    
-}
-
-@mixin btn-type($type){
+    border-color: darken($background-color,20%);
     @if $type == "classic"{
         border-radius: $btn-border-radius;
         border-style: $btn-border-style;
@@ -41,12 +33,6 @@
     }
     @if $type == "fancy"{
         /* Une ombre et un dégradé vers l'ombre ? */
-    }
-    @if $type == "outline"{
-        /* Border color = color et pas de background */
-        background-color: none;
-        border-radius: 0px;
-        border-style: $btn-border-style;
-        border-width: $btn-border-width;
+        box-shadow: 5px 5px 5px $background-color;
     }
 }

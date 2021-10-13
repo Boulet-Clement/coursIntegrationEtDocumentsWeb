@@ -6,12 +6,26 @@
         }
         @include alert($color,$theme-color);
     }
-    .btn-#{$theme}{
+    .btn-#{$theme}.btn-classic{
         $color : $btn-color;
         @if $theme == "light" {
             $color : $black;
         }
-        @include btn-color($color,$theme-color)
+        @include btn-color("classic",$color,$theme-color);
+    }
+    .btn-#{$theme}.btn-flat{
+        $color : $btn-color;
+        @if $theme == "light" {
+            $color : $black;
+        }
+        @include btn-color("flat",$color,$theme-color);
+    }
+    .btn-#{$theme}.btn-fancy{
+        $color : $btn-color;
+        @if $theme == "light" {
+            $color : $black;
+        }
+        @include btn-color("fancy",$color,$theme-color);
     }
     .btn-#{$theme}:hover{
         background-color: darken($theme-color,20%)
@@ -28,29 +42,21 @@
     @include btn-structure("large");
 }
 
-.btn-classic{
-    @include btn-type("classic");
-}
-.btn-flat{
-    @include btn-type("flat");
-}
-.btn-fancy{
-    @include btn-type("fancy");
-}
-.btn-outline{
-    @include btn-type("outline");
-}
-
 .btn{
     @extend .btn-primary;
     @extend .btn-medium;
-    @extend .btn-classic
+    @extend .btn-classic;
 }
 
-/* Voici un test de rajout de la part d'un développeur ayant lu la documentation : */
-.alert-info{
-    @include alert(red,grey);
+.flex-ul{
+    @include flex-ul;
 }
-.btn-info{
-    @include btn-color(red,grey);
+.flex-li{
+    @include flex-li;
+}
+@media screen and (max-width : 720px) {
+    .flex-ul{
+        @include flex-ul;
+        flex-direction: column;
+    }
 }

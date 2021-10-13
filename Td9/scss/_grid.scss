@@ -1,0 +1,16 @@
+$nb-columns:16 !default;
+$gutter: 1.2% !default;
+$one-column-width: (100% - ( $nb-columns + 1 ) * $gutter ) / $nb-columns !default; /* A verifier */
+
+@mixin row(){
+
+}
+@mixin col(){
+/*flex-shrink : 0
+flex-grow : 0
+justify-content: flex-start
+boder-box: justify-content ?*/
+}
+@mixin span($nb){
+
+}

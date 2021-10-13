@@ -34,14 +34,14 @@ $themes-colors: (
 ##              Alertes              ##
 #######################################
 */
-$alert-height: auto !default;
-$alert-width: 100% !default;
-$alert-display : block;
-
 $alert-font-size : 1.5rem !default;
 $alert-padding : 20px !default;
 $alert-margin : 0 !default;
 $alert-margin-bottom : 15px !default;
+
+$alert-height: auto !default;
+$alert-width: calc(100% - ( 2 * $alert-padding )) !default;
+$alert-display : block;
 
 $alert-color : white !default;
 $alert-background-color : grey !default;
@@ -70,3 +70,13 @@ $btn-padding-large: 0.60rem 1.20rem !default;
 $btn-border-color : rgb(11, 11, 126);
 $btn-background-color : $primary;
 $btn-color : $white;
+
+/*
+#######################################
+##              Navbar               ##
+#######################################
+*/
+
+$flex-ul-margin : 0;
+$flex-ul-padding : 0;
+$flex-ul-justify-content : space-around;
