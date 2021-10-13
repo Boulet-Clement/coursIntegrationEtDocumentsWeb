@@ -31,6 +31,15 @@
 .btn-classic{
     @include btn-type("classic");
 }
+.btn-flat{
+    @include btn-type("flat");
+}
+.btn-fancy{
+    @include btn-type("fancy");
+}
+.btn-outline{
+    @include btn-type("outline");
+}
 
 .btn{
     @extend .btn-primary;
