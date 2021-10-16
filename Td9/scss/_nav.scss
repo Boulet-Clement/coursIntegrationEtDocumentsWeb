@@ -4,14 +4,14 @@
 .flex-li
 .flex-link
 */
-@mixin flex-ul{
+@mixin flex-ul($theme-color){
     margin: $flex-ul-margin;
     padding: $flex-ul-padding;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: $primary;
+    background-color: $theme-color;
 }
 @mixin flex-li{
     list-style-type: none;

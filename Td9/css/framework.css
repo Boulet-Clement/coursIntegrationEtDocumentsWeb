@@ -67,6 +67,16 @@ html, body {
   background-color: #000099;
 }
 
+.flex-ul-primary {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: blue;
+}
+
 .alert-success {
   width: calc(100% - 40px);
   height: auto;
@@ -106,6 +116,16 @@ html, body {
 
 .btn-success:hover {
   background-color: #009900;
+}
+
+.flex-ul-success {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lime;
 }
 
 .alert-danger {
@@ -149,6 +169,16 @@ html, body {
   background-color: #990000;
 }
 
+.flex-ul-danger {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: red;
+}
+
 .alert-dark {
   width: calc(100% - 40px);
   height: auto;
@@ -187,6 +217,16 @@ html, body {
 }
 
 .btn-dark:hover {
+  background-color: black;
+}
+
+.flex-ul-dark {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   background-color: black;
 }
 
@@ -231,6 +271,16 @@ html, body {
   background-color: #cccccc;
 }
 
+.flex-ul-light {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
 .btn-small {
   padding: 0.3rem 0.6rem;
   font-size: 0.8rem;
@@ -271,7 +321,7 @@ html, body {
 }
 
 @media screen and (max-width: 720px) {
-  .flex-ul {
+  .flex-ul-primary {
     margin: 0;
     padding: 0;
     display: flex;
@@ -279,6 +329,50 @@ html, body {
     justify-content: space-around;
     align-items: center;
     background-color: blue;
+    flex-direction: column;
+  }
+
+  .flex-ul-success {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lime;
+    flex-direction: column;
+  }
+
+  .flex-ul-danger {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+    flex-direction: column;
+  }
+
+  .flex-ul-dark {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+  }
+
+  .flex-ul-light {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
     flex-direction: column;
   }
 }

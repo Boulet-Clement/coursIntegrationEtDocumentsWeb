@@ -30,6 +30,9 @@
     .btn-#{$theme}:hover{
         background-color: darken($theme-color,20%)
     }
+    .flex-ul-#{$theme}{
+        @include flex-ul($theme-color);
+    }
 }
 
 .btn-small{
@@ -49,14 +52,16 @@
 }
 
 .flex-ul{
-    @include flex-ul;
+    @include flex-ul($primary);
 }
 .flex-li{
     @include flex-li;
 }
 @media screen and (max-width : 720px) {
-    .flex-ul{
-        @include flex-ul;
-        flex-direction: column;
+    @each $theme, $theme-color in $themes-colors{
+        .flex-ul-#{$theme}{
+            @include flex-ul($theme-color);
+            flex-direction: column;
+        }
     }
 }
