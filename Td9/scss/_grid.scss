@@ -1,19 +1,21 @@
 $nb-columns:16 !default;
 $gutter: 1.2% !default;
-$one-column-width: (100% - ( $nb-columns + 1 ) * $gutter ) / $nb-columns !default; /* A verifier */
-
+$one-column-width: (100% - ( $nb-columns ) * $gutter ) / $nb-columns !default; /* A verifier */
+//$one-column-width: (100% - ( $nb-columns + 1 ) * $gutter ) / $nb-columns !default; /* A verifier */
+//math.div(100% - $nb-columns + 1 * $gutter, $nb-columns)
 @mixin row(){
-
+display: flex;
+flex-wrap: wrap;
 }
 @mixin col(){
-/*flex-shrink : 0
-flex-grow : 0
-justify-content: flex-start
-boder-box: justify-content ?*/
+flex-shrink : 0;
+flex-grow : 0;
+justify-content: flex-start;
+box-sizing : border-box; // ou content-box
 }
 @mixin span($nb-col){
 
 }
-@mixin offset($nb-col){
-
+@mixin offset($nb-col){    
+margin-left: $one-column-width*$nb-col + $gutter*$nb-col;
 }

@@ -74,3 +74,18 @@
         }
     }
 }
+
+@for $i from 1 through $nb-columns{
+    .col-#{$i}{
+        width : ($one-column-width*$i) + ($gutter * ($i));
+        @include col;
+    }
+}
+@for $i from 1 through ($nb-columns - 1){
+    .offset-#{$i}{
+        @include offset($i);
+    }
+}
+.row{
+    @include row;
+}
