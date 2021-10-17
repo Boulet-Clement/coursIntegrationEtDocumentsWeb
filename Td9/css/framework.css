@@ -26,6 +26,26 @@ html, body {
 .flex-li
 .flex-link
 */
+.text-red {
+  color: red;
+}
+
+.text-green {
+  color: lime;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-white {
+  color: white;
+}
+
 .alert-primary {
   width: calc(100% - 40px);
   height: auto;

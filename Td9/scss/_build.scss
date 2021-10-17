@@ -1,3 +1,8 @@
+@each $name, $color in $colors{
+    .text-#{$name}{
+        @include text-color($color);
+    }
+}
 @each $theme, $theme-color in $themes-colors{
     .alert-#{$theme}{
         $color : $alert-color;
