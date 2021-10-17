@@ -35,6 +35,10 @@
     .btn-#{$theme}:hover{
         background-color: darken($theme-color,20%)
     }
+    .btn-#{$theme}:active{
+        box-shadow: inset -2px -2px 3px lighten($theme-color,10%),
+                inset 2px 2px 3px lighten($theme-color,10%);
+    }
     .flex-ul-#{$theme}{
         @include flex-ul($theme-color);
     }

@@ -20,12 +20,6 @@ html, body {
 ##              Navbar               ##
 #######################################
 */
-/* 
-.flex-nav
-.flex-ul
-.flex-li
-.flex-link
-*/
 .text-red {
   color: red;
 }
@@ -87,6 +81,10 @@ html, body {
   background-color: #000099;
 }
 
+.btn-primary:active, .btn:active {
+  box-shadow: inset -2px -2px 3px #3333ff, inset 2px 2px 3px #3333ff;
+}
+
 .flex-ul-primary {
   margin: 0;
   padding: 0;
@@ -136,6 +134,10 @@ html, body {
 
 .btn-success:hover {
   background-color: #009900;
+}
+
+.btn-success:active {
+  box-shadow: inset -2px -2px 3px #33ff33, inset 2px 2px 3px #33ff33;
 }
 
 .flex-ul-success {
@@ -189,6 +191,10 @@ html, body {
   background-color: #990000;
 }
 
+.btn-danger:active {
+  box-shadow: inset -2px -2px 3px #ff3333, inset 2px 2px 3px #ff3333;
+}
+
 .flex-ul-danger {
   margin: 0;
   padding: 0;
@@ -240,6 +246,10 @@ html, body {
   background-color: black;
 }
 
+.btn-dark:active {
+  box-shadow: inset -2px -2px 3px #1a1a1a, inset 2px 2px 3px #1a1a1a;
+}
+
 .flex-ul-dark {
   margin: 0;
   padding: 0;
@@ -289,6 +299,10 @@ html, body {
 
 .btn-light:hover {
   background-color: #cccccc;
+}
+
+.btn-light:active {
+  box-shadow: inset -2px -2px 3px white, inset 2px 2px 3px white;
 }
 
 .flex-ul-light {

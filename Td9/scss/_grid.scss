@@ -11,6 +11,9 @@ flex-grow : 0
 justify-content: flex-start
 boder-box: justify-content ?*/
 }
-@mixin span($nb){
+@mixin span($nb-col){
+
+}
+@mixin offset($nb-col){
 
 }
