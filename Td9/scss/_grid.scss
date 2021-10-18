@@ -1,8 +1,4 @@
-$nb-columns:16 !default;
-$gutter: 1.2% !default;
-$one-column-width: (100% - ( $nb-columns ) * $gutter ) / $nb-columns !default; /* A verifier */
-//$one-column-width: (100% - ( $nb-columns + 1 ) * $gutter ) / $nb-columns !default; /* A verifier */
-//math.div(100% - $nb-columns + 1 * $gutter, $nb-columns)
+$one-column-width: (100% - ( $nb-columns ) * $gutter ) / $nb-columns !default;
 @mixin row(){
 display: flex;
 flex-wrap: wrap;

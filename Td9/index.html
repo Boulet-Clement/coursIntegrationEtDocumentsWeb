@@ -19,7 +19,7 @@
     </ul>
   </nav>
 <br/>
-<div class="alert-primary">
+<div class="alert-primary text-align-right">
 
   <p>Bravo ! vous avez gagné un panda géant</p>
 
@@ -27,12 +27,12 @@
 
 <div class="cefini alert-danger">
 
-  <h4 class="text-blue">alerte rouge avec une classe text-blue sur le h4</h4>
+  <h4 class="text-blue text-align-center">alerte rouge avec une classe text-blue sur le h4</h4>
   <p>ceci est une alerte rouge de 1er niveau, tout va péter dans 30s si vous ne faites rien !</p>
 
 </div>
 
-<div>
+<div class="align-items-center">
     <button class="btn-large btn-primary btn-classic">Ceci est un bouton "btn-large"</button>
     <button class="btn-medium btn-success btn-flat">Ceci est un bouton "btn-medium"</button>
     <button class="btn-small btn-danger btn-classic">Ceci est un bouton "btn-small"</button>
@@ -44,14 +44,30 @@
   <div class="col-6" style="border: 3px solid red;">oh</div>
   <div class="col-4" style="border: 3px solid red;">ah</div>
   <div class="col-2" style="border: 3px solid red;">oh</div>
-  <div class="offset-4 col-2" style="border: 3px solid red;">une colone avec un offset-4</div>
-  <div class="col-4" style="border: 3px solid red;">ah</div>
+  <div class="offset-4 col-4" style="border: 3px solid red;">une colone avec un offset-4</div>
+  <div class="col-2" style="border: 3px solid red;">ah</div>
 </div>
 
 <div class="row">
-  <div class="col-sm-16 col-8">Voir une colonne sm-16 et col-8</div>
-  <div class="col-8 col-sm-16">Voir une colonne sm-16 et col-8</div>
+  <div class="col-sm-16 col-8 text-align-center" style="border: 3px solid purple;">Voici une colonne sm-16 et col-8</div>
+  <div class="col-8 col-sm-16 text-align-right" style="border: 3px solid purple;">Voici une colonne sm-16 et col-8</div>
 </div>
-
+<table style="height: 100px; border: 3px solid green;">
+  <thead>
+    <tr>
+        <th colspan="6">Voici un exemple issu de la documentation bootstrap pour l'alignement vertical :</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="vertical-align-baseline">baseline</td>
+      <td class="vertical-align-top">top</td>
+      <td class="vertical-align-middle">middle</td>
+      <td class="vertical-align-bottom">bottom</td>
+      <td class="vertical-align-text-top">text-top</td>
+      <td class="vertical-align-text-bottom">text-bottom</td>
+    </tr>
+  </tbody>
+</table>
 </body>
 </html>

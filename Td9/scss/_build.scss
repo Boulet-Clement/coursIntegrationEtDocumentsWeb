@@ -119,3 +119,18 @@
 .row{
     @include row;
 }
+@each $name, $position in $text-align-positions{
+    .text-align-#{$name}{
+        @include text-align($position);
+    }
+}
+@each $name, $position in $align-items-positions{
+    .align-items-#{$name}{
+        @include text-align($position);
+    }
+}
+@each $name, $position in $vertical-align-positions{
+    .vertical-align-#{$name}{
+        @include vertical-align($position);
+    }
+}
