@@ -73,6 +73,36 @@
             flex-direction: column;
         }
     }
+    @for $i from 1 through $nb-columns{
+        .col-sm-#{$i}{
+            width : ($one-column-width*$i) + ($gutter * ($i))!important;
+            @include col;
+        }
+    }
+}
+@media screen and (min-width : 721px) and (max-width:960) {
+    @for $i from 1 through $nb-columns{
+        .col-md-#{$i}{
+            width : ($one-column-width*$i) + ($gutter * ($i))!important;
+            @include col;
+        }
+    }
+}
+@media screen and (min-width : 761px) and (max-width:1200) {
+    @for $i from 1 through $nb-columns{
+        .col-lg-#{$i}{
+            width : ($one-column-width*$i) + ($gutter * ($i))!important;
+            @include col;
+        }
+    }
+}
+@media screen and (min-width : 1201) {
+    @for $i from 1 through $nb-columns{
+        .col-xl-#{$i}{
+            width : ($one-column-width*$i) + ($gutter * ($i))!important;
+            @include col;
+        }
+    }
 }
 
 @for $i from 1 through $nb-columns{
