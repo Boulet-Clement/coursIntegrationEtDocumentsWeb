@@ -16,8 +16,8 @@ header>span>h1{
     font-family: 'open_sansextrabold';
 }
 header>ul>li>img{
-    height:1em;
-    width:1em;
+    height:1rem;
+    width:1rem;
     margin:0.5rem;
 }
 small{
@@ -28,31 +28,73 @@ small{
 }
 .menu{
     color: orange;
+    font-size: 1.3rem;
 }
-.menu>h2{
+.menu-titre{
+    margin-top: 3rem;
+    margin-bottom: 2rem; 
     font-size: 1.5rem;
     margin-left: 3%;
     font-family: 'open_sansextrabold';
 }
-.menu-titre{
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-}
 .menu-item{
     margin-left: 4.2rem;
+    margin-top: 0.5rem;
+    & >span{
+        margin-left : 1rem;
+    }
 }
-.menu-item>img{
-    color:orange;
-    border-color: orange;
+.menu-sous-item{
+    margin-left: 2.5rem;
+    margin-top: 0.5rem;
 }
+.main{
+    column-count: 4;
+    column-gap: 1em;
+}
+
+/*
+################################
+##            Grid            ##
+################################
+*/
+
+.row{
+    @include row;
+}
+
 /*
 ################################
 ##        Media queries       ##
 ################################
 */
-@media (max-width : 612px) {
+@media (max-width : 689px) {
     @for $i from 1 through $nb-columns{
         .col-xs-#{$i}{
+            width : ($one-column-width*$i) + ($gutter * ($i))!important;
+            @include col;
+        }
+    }
+}
+@media (min-width: 690px) and(max-width : 900px) {
+    @for $i from 1 through $nb-columns{
+        .col-s-#{$i}{
+            width : ($one-column-width*$i) + ($gutter * ($i))!important;
+            @include col;
+        }
+    }
+}
+@media (min-width: 950px) and(max-width : 1099px) {
+    @for $i from 1 through $nb-columns{
+        .col-m-#{$i}{
+            width : ($one-column-width*$i) + ($gutter * ($i))!important;
+            @include col;
+        }
+    }
+}
+@media (min-width: 1110px) and(max-width : 1250px) {
+    @for $i from 1 through $nb-columns+3{
+        .col-l-#{$i}{
             width : ($one-column-width*$i) + ($gutter * ($i))!important;
             @include col;
         }
