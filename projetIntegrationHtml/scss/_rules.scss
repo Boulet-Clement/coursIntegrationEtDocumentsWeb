@@ -44,8 +44,29 @@ small{
     margin-left: 2.5rem;
     margin-top: 0.5rem;
 }
+section>article:first-child{
+    margin-top: 2em;
+}
+section>article:nth-child(2n+1){
+    transform: rotate(-1deg);
+}
+section>article:nth-child(2n){
+    transform: rotate(1deg);
+}
+section{
+    margin-left: 1em;
+    margin-right: 1em;
+}
 article{
     position: relative;
+    box-sizing: border-box;
+    margin-top:1.25em;
+    box-shadow: 2px 2px 2px 2px grey;
+    margin-left: 0.6%;
+    margin-right: 0.6%;
+}
+article>*:not(.article-img){
+    padding : 0.5em;
 }
 .article-img{
     width:100%;
@@ -65,14 +86,28 @@ article{
     font-family: 'open_sansextrabold';
     font-size: 1em;
     color: orange;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 .article-hr{
     border: none;
     border-bottom: 0.4em black solid;
     width:2.5em;
-    margin-left:0;
+    margin-left:0.5em;
+}
+.article-auteur{
+    text-decoration: underline;
+}
+.article-date{
+    font-style: italic;
+}
+.article-auteur,.article-date{
+    margin-left: 0.4em;
 }
 .article-text{
     font-family: 'open_sansregular';
     font-size: 0.875em;
+    line-height: 1.2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }

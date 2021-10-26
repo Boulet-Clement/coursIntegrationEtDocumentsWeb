@@ -8,6 +8,7 @@ flex-shrink : 0;
 flex-grow : 0;
 justify-content: flex-start;
 box-sizing : border-box; // ou content-box
+column-gap: $gutter;
 }
 @mixin span($nb-col){
 

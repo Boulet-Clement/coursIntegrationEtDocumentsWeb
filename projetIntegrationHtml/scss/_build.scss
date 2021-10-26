@@ -16,7 +16,7 @@
 @media (max-width : $xs) {
     @for $i from 1 through $nb-columns{
         .col-xs-#{$i}{
-            width : ($one-column-width*$i) + ($gutter * ($i))!important;
+            width : ($one-column-width*$i) + ($gutter * ($i)) - $gutter;
             @include col;
         }
     }
@@ -24,7 +24,7 @@
 @media (min-width: $xs + 1) and(max-width : $s) {
     @for $i from 1 through $nb-columns{
         .col-s-#{$i}{
-            width : ($one-column-width*$i) + ($gutter * ($i))!important;
+            width : ($one-column-width*$i) + ($gutter * ($i))  - $gutter;
             @include col;
         }
     }
@@ -32,7 +32,7 @@
 @media (min-width: $s + 1) and(max-width : $m) {
     @for $i from 1 through $nb-columns{
         .col-m-#{$i}{
-            width : ($one-column-width*$i) + ($gutter * ($i))!important;
+            width : ($one-column-width*$i) + ($gutter * ($i)) - $gutter;
             @include col;
         }
     }
@@ -40,7 +40,7 @@
 @media (min-width: $m + 1) and(max-width : $l) {
     @for $i from 1 through $nb-columns+3{
         .col-l-#{$i}{
-            width : ($one-column-width*$i) + ($gutter * ($i))!important;
+            width : ($one-column-width*$i) + ($gutter * ($i)) - $gutter;
             @include col;
         }
     }
@@ -48,7 +48,7 @@
 @media (min-width: $l + 1) and(max-width : $el) {
     @for $i from 1 through $nb-columns+3{
         .col-el-#{$i}{
-            width : ($one-column-width*$i) + ($gutter * ($i))!important;
+            width : ($one-column-width*$i) + ($gutter * ($i)) - $gutter;
             @include col;
         }
     }
