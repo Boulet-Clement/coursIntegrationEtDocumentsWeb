@@ -100,6 +100,11 @@ article>*:not(.article-img){
 }
 .article-date{
     font-style: italic;
+    position: relative;
+    top:0.4em;
+}
+.article-date-img{
+margin-top: 0.5em;
 }
 .article-auteur,.article-date{
     margin-left: 0.4em;
@@ -171,4 +176,33 @@ article>*:not(.article-img){
     .article-jstools{
         order:3;
     }
+}
+.btn-next{
+    border: 1px black solid;
+    border-radius: 5em;
+    padding-right:35px;
+    padding-left: 1em;
+    margin-top: 2em;
+    width: max-content;
+    margin-right:5vw;
+    float: right;
+    margin-bottom: 5vh;
+    line-height: 1.2em;
+    padding-top: 0.1em;
+    padding-bottom: 0.2em;
+}
+.btn-next-logos{
+    width:25px;
+    position: relative;
+    right:0px;
+}
+.btn-next-logo-1{
+    position: absolute;
+    right:-20px;
+    margin-top: 0.2em;
+}
+.btn-next-logo-2{
+    position: absolute;
+    right:-27px;
+    margin-top: 0.2em;
 }
