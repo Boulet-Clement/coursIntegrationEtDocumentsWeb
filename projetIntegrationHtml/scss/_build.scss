@@ -13,45 +13,70 @@
 ##        Media queries       ##
 ################################
 */
+//Il faut modifier les medias queries 
 @media (max-width : $xs) {
-    @for $i from 1 through $nb-columns{
+    @for $i from 1 through $nb-columns - 1 {
         .col-xs-#{$i}{
             width : ($one-column-width*$i) + ($gutter * ($i)) - $gutter;
             @include col;
-        }
+        }    
+    }
+    .col-xs-#{$nb-columns}{
+        width : ($one-column-width*$nb-columns) + ($gutter * ($nb-columns));
+        @include col;
     }
 }
 @media (min-width: $xs + 1) and(max-width : $s) {
-    @for $i from 1 through $nb-columns{
+    @for $i from 1 through $nb-columns - 1 {
         .col-s-#{$i}{
             width : ($one-column-width*$i) + ($gutter * ($i))  - $gutter;
             @include col;
         }
     }
+    .col-s-#{$nb-columns}{
+        width : ($one-column-width*$nb-columns) + ($gutter * ($nb-columns));
+        @include col;
+    }
 }
 @media (min-width: $s + 1) and(max-width : $m) {
-    @for $i from 1 through $nb-columns{
+    @for $i from 1 through $nb-columns - 1 {
         .col-m-#{$i}{
             width : ($one-column-width*$i) + ($gutter * ($i)) - $gutter;
             @include col;
         }
     }
+    .col-m-#{$nb-columns}{
+        width : ($one-column-width*$nb-columns) + ($gutter * ($nb-columns));
+        @include col;
+    }
 }
+
+$nb-spec-columns : 15;
+$one-spec-column-width: (100% - ( $nb-spec-columns ) * $gutter ) / $nb-spec-columns;
 @media (min-width: $m + 1) and(max-width : $l) {
-    @for $i from 1 through $nb-columns+3{
+    @for $i from 1 through $nb-spec-columns - 1{
         .col-l-#{$i}{
-            width : ($one-column-width*$i) + ($gutter * ($i)) - $gutter;
+            width : ($one-spec-column-width*$i) + ($gutter * ($i)) - $gutter;
             @include col;
         }
     }
+    .col-l-#{$nb-spec-columns}{
+        width : ($one-spec-column-width*$nb-spec-columns) + ($gutter * ($nb-spec-columns));
+        @include col;
+    }
 }
 @media (min-width: $l + 1) and(max-width : $el) {
-    @for $i from 1 through $nb-columns+3{
+    @for $i from 1 through $nb-columns - 1{
         .col-el-#{$i}{
             width : ($one-column-width*$i) + ($gutter * ($i)) - $gutter;
             @include col;
         }
     }
+    .col-el-#{$nb-columns}{
+        width : ($one-column-width*$nb-columns) + ($gutter * ($nb-columns));
+        @include col;
+    }
+
 }
 /*
 ################################

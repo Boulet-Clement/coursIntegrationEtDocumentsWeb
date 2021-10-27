@@ -111,3 +111,59 @@ article>*:not(.article-img){
     margin-top: 2em;
     margin-bottom: 2em;
 }
+.article-amp{
+    order:1
+}
+.article-delivery{
+    order:2;
+}
+.article-react{
+    order:3
+}
+.article-jstools{
+    order:4;
+}
+.article-ionic-publish{
+    order:5;
+}
+.article-ionic-icon{
+    order:6;
+}
+.article-migratetojekyll{
+    order:7;
+}
+.article-ionic-firebase{
+    order:8;
+}
+.article-cordova{
+    order:9;
+}
+.article-freecourse{
+    order:9;
+}
+@media (max-width : $xs) {
+
+}
+@media (min-width: $xs + 1) and(max-width : $s) {
+    .article-react{
+        order:4
+    }
+    .article-jstools{
+        order:3;
+    }
+}
+@media (min-width: $s + 1) and(max-width : $m) {
+    .article-delivery{
+        order:3;
+    }
+    .article-jstools{
+        order:2;
+    }
+}
+
+@media (min-width: $m + 1) and(max-width : $l) {
+
+}
+@media (min-width: $l + 1) and(max-width : $el) {
+
+}

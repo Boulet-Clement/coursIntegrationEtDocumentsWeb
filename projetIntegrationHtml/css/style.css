@@ -504,7 +504,7 @@ Tailles
   }
 
   .col-xs-12 {
-    width: 98.8%;
+    width: 100%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -613,7 +613,7 @@ Tailles
   }
 
   .col-s-12 {
-    width: 98.8%;
+    width: 100%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -722,7 +722,7 @@ Tailles
   }
 
   .col-m-12 {
-    width: 98.8%;
+    width: 100%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -732,7 +732,7 @@ Tailles
 }
 @media (min-width: 1100px) and (max-width: 1250px) {
   .col-l-1 {
-    width: 7.1333333333%;
+    width: 5.4666666667%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -741,7 +741,7 @@ Tailles
   }
 
   .col-l-2 {
-    width: 15.4666666667%;
+    width: 12.1333333333%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -750,7 +750,7 @@ Tailles
   }
 
   .col-l-3 {
-    width: 23.8%;
+    width: 18.8%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -759,7 +759,7 @@ Tailles
   }
 
   .col-l-4 {
-    width: 32.1333333333%;
+    width: 25.4666666667%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -768,7 +768,7 @@ Tailles
   }
 
   .col-l-5 {
-    width: 40.4666666667%;
+    width: 32.1333333333%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -777,7 +777,7 @@ Tailles
   }
 
   .col-l-6 {
-    width: 48.8%;
+    width: 38.8%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -786,7 +786,7 @@ Tailles
   }
 
   .col-l-7 {
-    width: 57.1333333333%;
+    width: 45.4666666667%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -795,7 +795,7 @@ Tailles
   }
 
   .col-l-8 {
-    width: 65.4666666667%;
+    width: 52.1333333333%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -804,7 +804,7 @@ Tailles
   }
 
   .col-l-9 {
-    width: 73.8%;
+    width: 58.8%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -813,7 +813,7 @@ Tailles
   }
 
   .col-l-10 {
-    width: 82.1333333333%;
+    width: 65.4666666667%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -822,7 +822,7 @@ Tailles
   }
 
   .col-l-11 {
-    width: 90.4666666667%;
+    width: 72.1333333333%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -831,7 +831,7 @@ Tailles
   }
 
   .col-l-12 {
-    width: 98.8%;
+    width: 78.8%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -840,7 +840,7 @@ Tailles
   }
 
   .col-l-13 {
-    width: 107.1333333333%;
+    width: 85.4666666667%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -849,7 +849,7 @@ Tailles
   }
 
   .col-l-14 {
-    width: 115.4666666667%;
+    width: 92.1333333333%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -858,7 +858,7 @@ Tailles
   }
 
   .col-l-15 {
-    width: 123.8%;
+    width: 100%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -967,34 +967,7 @@ Tailles
   }
 
   .col-el-12 {
-    width: 98.8%;
-    flex-shrink: 0;
-    flex-grow: 0;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    column-gap: 1.2%;
-  }
-
-  .col-el-13 {
-    width: 107.1333333333%;
-    flex-shrink: 0;
-    flex-grow: 0;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    column-gap: 1.2%;
-  }
-
-  .col-el-14 {
-    width: 115.4666666667%;
-    flex-shrink: 0;
-    flex-grow: 0;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    column-gap: 1.2%;
-  }
-
-  .col-el-15 {
-    width: 123.8%;
+    width: 100%;
     flex-shrink: 0;
     flex-grow: 0;
     justify-content: flex-start;
@@ -1269,6 +1242,65 @@ article > *:not(.article-img) {
   line-height: 1.2em;
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+.article-amp {
+  order: 1;
+}
+
+.article-delivery {
+  order: 2;
+}
+
+.article-react {
+  order: 3;
+}
+
+.article-jstools {
+  order: 4;
+}
+
+.article-ionic-publish {
+  order: 5;
+}
+
+.article-ionic-icon {
+  order: 6;
+}
+
+.article-migratetojekyll {
+  order: 7;
+}
+
+.article-ionic-firebase {
+  order: 8;
+}
+
+.article-cordova {
+  order: 9;
+}
+
+.article-freecourse {
+  order: 9;
+}
+
+@media (min-width: 690px) and (max-width: 900px) {
+  .article-react {
+    order: 4;
+  }
+
+  .article-jstools {
+    order: 3;
+  }
+}
+@media (min-width: 901px) and (max-width: 1099px) {
+  .article-delivery {
+    order: 3;
+  }
+
+  .article-jstools {
+    order: 2;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
