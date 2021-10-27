@@ -13,8 +13,7 @@
 ##        Media queries       ##
 ################################
 */
-//Il faut modifier les medias queries 
-@media (max-width : $xs) {
+@media (max-width : $s - 1) {
     @for $i from 1 through $nb-columns - 1 {
         .col-xs-#{$i}{
             width : ($one-column-width*$i) + ($gutter * ($i)) - $gutter;
@@ -26,7 +25,7 @@
         @include col;
     }
 }
-@media (min-width: $xs + 1) and(max-width : $s) {
+@media (min-width: $s ) and(max-width : $m - 1) {
     @for $i from 1 through $nb-columns - 1 {
         .col-s-#{$i}{
             width : ($one-column-width*$i) + ($gutter * ($i))  - $gutter;
@@ -38,7 +37,7 @@
         @include col;
     }
 }
-@media (min-width: $s + 1) and(max-width : $m) {
+@media (min-width: $m ) and(max-width : $l - 1) {
     @for $i from 1 through $nb-columns - 1 {
         .col-m-#{$i}{
             width : ($one-column-width*$i) + ($gutter * ($i)) - $gutter;
@@ -53,7 +52,7 @@
 
 $nb-spec-columns : 15;
 $one-spec-column-width: (100% - ( $nb-spec-columns ) * $gutter ) / $nb-spec-columns;
-@media (min-width: $m + 1) and(max-width : $l) {
+@media (min-width: $l) and(max-width : $el - 1) {
     @for $i from 1 through $nb-spec-columns - 1{
         .col-l-#{$i}{
             width : ($one-spec-column-width*$i) + ($gutter * ($i)) - $gutter;
@@ -65,7 +64,7 @@ $one-spec-column-width: (100% - ( $nb-spec-columns ) * $gutter ) / $nb-spec-colu
         @include col;
     }
 }
-@media (min-width: $l + 1) and(max-width : $el) {
+@media (min-width: $el) {
     @for $i from 1 through $nb-columns - 1{
         .col-el-#{$i}{
             width : ($one-column-width*$i) + ($gutter * ($i)) - $gutter;
@@ -78,6 +77,8 @@ $one-spec-column-width: (100% - ( $nb-spec-columns ) * $gutter ) / $nb-spec-colu
     }
 
 }
+//Il faut modifier les medias queries 
+
 /*
 ################################
 ##         Text align         ##
